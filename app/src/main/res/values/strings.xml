@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Prototype</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_locator">Map</string>
+    <string name="google_maps_key">AIzaSyAgmnCh3J3m2bOpwVygmlowWeuJWhlyD78</string>
+    <string name="title_activity_loc_check">Map</string>
+</resources>

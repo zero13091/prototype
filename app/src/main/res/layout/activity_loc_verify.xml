@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jude.prototype.LocVerify">
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        tools:context="com.example.currentplacedetailsonmap.MapsActivityCurrentPlace" />
+
+    <Button
+        android:id="@+id/timein"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:onClick="TimeIn"
+        android:text="Time In"
+        tools:layout_editor_absoluteX="114dp"
+        tools:layout_editor_absoluteY="288dp"
+        android:layout_below="@+id/button3"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="refresh"
+        android:onClick="getLocationB"
+        android:layout_below="@+id/map"
+        android:layout_alignStart="@+id/timein"
+        android:layout_marginTop="31dp" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/timeout"
+        android:text="Time Out"
+        android:onClick="Timeout"
+        android:layout_below="@+id/timein"
+        android:layout_alignEnd="@+id/timein"
+        android:layout_marginTop="25dp" />
+
+
+</RelativeLayout>
